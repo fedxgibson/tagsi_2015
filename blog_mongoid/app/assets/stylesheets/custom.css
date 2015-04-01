@@ -1,0 +1,36 @@
+.panel-default > .panel-heading.panel-heading {
+  background:#003366;
+}
+
+.titulo{
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+p.text1{
+  font-size:15px;
+  font-weight: bold;	
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#new-article {
+  margin-bottom: 30px;
+}
+
+#article-title {
+  color: red;
+  padding-left: 20px;
+}
+
+/*.article-wrapper {
+  padding: 60px;
+  border-radius: 22px 22px 22px 22px;
+  -moz-border-radius: 22px 22px 22px 22px;
+  -webkit-border-radius: 22px 22px 22px 22px;
+  border: solid #b0b4ed;
+  margin-bottom: 50px;
+}*/

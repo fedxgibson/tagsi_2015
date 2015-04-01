@@ -1,0 +1,23 @@
+<div class="container" align="center" style="width: 500px">
+<div class="panel panel-default" align="left" >
+	<div class="panel-heading" bgcolor="#f5f5f"><label class="titulo">Edit Product Detail</label></div>
+	<div class="panel-body">
+	<br>
+<%= form_for @product,url: {action: "update",:id => @product.id}, html: { class: "form-group"} do |f| %>
+<p><label>Product Id.</label>:
+<%= f.text_field :product_id, :class => "form-control" %></p>
+<p><label>Name</label>:
+<%= f.text_field :name, :class => "form-control" %></p>
+<p><label>Price</label>:
+<%= f.text_field:price, :class => "form-control" %></p>
+<p><label>Category</label>:
+<%= collection_select(:product,:category_id,@categories,:id,:name, {:class=>'form-control'}) %></p>
+<p><label>Description</label><br/>
+<%= f.text_area:description, :class => "form-control" %></p>
+<%= f.submit class:"btn btn-primary", :class => "form-control"%>
+<% end %>
+
+</div>
+</div>
+<p align="center"></p><%= link_to 'Back', {:action => 'list' },class:"btn btn-primary" %></p>
+</div>

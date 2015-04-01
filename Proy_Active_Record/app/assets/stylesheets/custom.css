@@ -1,0 +1,14 @@
+.panel-default > .panel-heading.panel-heading {
+	background:#003366;
+}
+
+.titulo{
+	color: #FFFFFF;
+	font-size: 30px
+}
+
+p.text1{
+	font-size:15px;
+	font-weight: bold;	
+}
+	

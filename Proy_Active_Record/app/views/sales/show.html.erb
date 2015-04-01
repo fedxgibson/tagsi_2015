@@ -1,0 +1,15 @@
+<div class="container" align="center" style="width: 500px">
+<div class="panel panel-default" align="left" >
+<div class="panel-heading" bgcolor="#f5f5f" align="center"><label class="titulo"><%= @sale.id%></label></div>
+<p><strong>Sale id: </strong> <%= @sale.id %><br />
+<strong>Client :</strong> <%= @sale.client.first_name %> <%= @sale.client.last_name %><br />
+<strong>Vendor name :</strong> <%= @sale.vendor_name %><br />
+<strong>Number of items :</strong> <%= @sale.items_number %><br />
+<strong>Created Date:</strong> <%= @sale.created_at %><br />
+</p>
+<hr />
+<p align="center">
+<%= link_to 'Back', {:action => 'list'},class:"btn btn-primary"%>
+</p>
+</div>
+</div>

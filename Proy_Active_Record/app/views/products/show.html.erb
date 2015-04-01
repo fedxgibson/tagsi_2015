@@ -1,0 +1,15 @@
+<div class="container" align="center" style="width: 500px">
+<div class="panel panel-default" align="left" >
+<div class="panel-heading" bgcolor="#f5f5f" align="center"><label class="titulo"><%= @product.name %></label></div>
+<p><strong>Product id: </strong><%= @product.product_id %><br />
+<strong>Category :</strong> <%= @product.category.name %><br />
+<strong>Price :</strong> <%= @product.price %><br />
+<strong>Created Date:</strong> <%= @product.created_at %><br />
+<strong>Description:</strong>
+<%= @product.description %></p>
+<hr />
+<p align="center">
+<%= link_to 'Back', {:action => 'list'},class:"btn btn-primary"%>
+</p>
+</div>
+</div>

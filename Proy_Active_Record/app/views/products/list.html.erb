@@ -1,0 +1,25 @@
+<div class="container" style="width: 500px">
+<div class="panel panel-default">
+	<div class="panel-heading" bgcolor="#f5f5f"><label class="titulo">List of Product</label></div>
+ 	<div class="panel-body">
+		<% if  @products.blank? %>
+				<p class="text1">There are not any products currently in the system.</p>
+			<% else %>
+				<p class="text1">These are the current products in our system</p>
+				<ul id="products">
+				<%  @products.each do |c| %>
+				<div class="panel panel-default">
+					<div class="btn-group" role="group" aria-label="...">
+						<span class="label label-default" align="center">Product: <%=c.name%></span><br><br>
+					 	<%= link_to 'Show', {:action => "show",:id => c.id}, class:"btn btn-primary" %>
+  						<%= link_to 'Edit', {:action => "edit",:id => c.id}, class:"btn btn-primary"%>
+  						<%= link_to "Delete", {:action => 'delete', :id => c.id},  data: { confirm: 'Are you sure?'}, class:"btn btn-primary"%>
+					</div><br><br>
+				</div>
+				<% end %>
+				</ul>
+			<% end %>
+			<p class="text1">Add new Products
+			<a class="btn btn-default" href="/product/new"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+			</p>
+</div>
